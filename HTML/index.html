@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdullah - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(1, 1, 38);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 40px;
+            background-color: rgb(37, 37, 67);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: blueviolet;
+            font-size: 1.2rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #c5b5e3;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+            margin: 30px;
+        }
+
+        .rightSection img {
+            width: 70%;
+            margin: 30px;
+        }
+
+        .purple {
+            color: rgb(160, 87, 229);
+        }
+
+        #element {
+            color: rgb(160, 87, 229);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Abdullah's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li>
+                        <a=href=" /">About</a>
+                    </li>
+                    <li>
+                        <a=href=" /">Home</a>
+                    </li>
+                    <li>
+                        <a=href=" /">Services</a>
+                    </li>
+                    <li>
+                        <a=href=" /">Projects</a>
+                    </li>
+                    <li>
+                        <a=href=" /">Contact Me</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hello, this is <span class="purple">Abdullah</span>
+                <div>and I am passionate</div>
+                <span id="element"></span>
+
+            </div>
+            <div class="rightSection">
+                <img src="picture/bgn.png" alt="">
+            </div>
+
+        </section>
+        <hr>
+        <section class="secondSection">
+            <h1>Past Experience</h1>
+
+        </section>
+
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Android Developer', "UI/UX Designer"],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
